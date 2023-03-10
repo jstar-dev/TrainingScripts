@@ -1,0 +1,17 @@
+for (iterate deploy file) {
+	if (line contains "\CS") {
+		ignore this line
+	} 
+	else {
+		if(line contains Pro) {
+			take short path of line till sql-githubactions-sql\SQL\NLS-PROD-SQL01\NLS_Custom\
+			append Procedure in the above path say sql-githubactions-sql\SQL\NLS-PROD-SQL01\NLS_Custom\Procedures
+			if (sql-githubactions-sql\SQL\NLS-PROD-SQL01\NLS_Custom\Procedures exists) {
+				rename scripts to procedures
+			}
+			
+		}
+	}
+
+
+}
